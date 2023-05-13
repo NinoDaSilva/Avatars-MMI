@@ -1,0 +1,65 @@
+div:hover svg {
+    transform: scale(1.01);
+}
+
+div:hover .nom {
+    animation: nom 5s ease-out;
+    z-index: 3;
+}
+
+div:hover .cercle {
+    animation: cercle 5s;
+}
+
+@keyframes cercle {
+    0% {
+        transform: translate(-75%, -70%);
+        z-index: 2;
+    }
+    25% {
+        transform: translate(-30%, -20%);
+        opacity: 0.4;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, 48%);
+        z-index: 2;
+    }
+}
+
+@keyframes nom {
+    0% {
+        opacity: 0;
+    }
+    39% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+}
+
+div:hover #visage,
+div:hover #cheveux,
+div:hover #cheveux-2,
+div:hover #yeux,
+div:hover #nez_1,
+div:hover #oreilles,
+div:hover #barbe,
+div:hover #moustache,
+div:hover #lunette,
+div:hover #taches_de_rousseur,
+div:hover #masque {
+    animation: mouv 1s;
+}
+
+@keyframes mouv {
+    0% {
+        transform: scale(1, 0.9);
+        transform-origin: bottom;
+    }
+    100% {
+    }
+}
